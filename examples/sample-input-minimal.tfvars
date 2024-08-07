@@ -3,9 +3,17 @@
 # values you want to change.
 
 # ****************  REQUIRED VARIABLES  ****************
+subscription_id = "11eeecbd-d122-42e2-986c-ec5992938dbf"
+client_id       = "3a4b6a79-76c9-49a8-a8e6-3bd2e7292162"
+client_secret   = ""
+tenant_id       = "5b290467-0c6a-4efc-97f6-7635224fb5b1"
+
+# ****************  REQUIRED VARIABLES  ****************
+
+# ****************  REQUIRED VARIABLES  ****************
 # These required variables' values MUST be provided by the User
-prefix   = "<prefix-value>" # this is a prefix that you assign for the resources to be created
-location = "<azure-location-value>" # e.g., "eastus2"
+prefix   = "azgsbx" # this is a prefix that you assign for the resources to be created
+location = "canadacentral" # e.g., "eastus2"
 # ****************  REQUIRED VARIABLES  ****************
 
 # !NOTE! - Without specifying your CIDR block access rules, ingress traffic
@@ -17,7 +25,7 @@ ssh_public_key              = "~/.ssh/id_rsa.pub"
 # **************  RECOMMENDED  VARIABLES  ***************
 
 # Tags can be specified matching your tagging strategy.
-tags = {} # for example: { "owner|email" = "<you>@<domain>.<com>", "key1" = "value1", "key2" = "value2" }
+tags = {ApplicationOwner = "Diogo Maul", BusinessOwner = "Matt Neeb"} # for example: { "owner|email" = "<you>@<domain>.<com>", "key1" = "value1", "key2" = "value2" }
 
 # Postgres config - By having this entry a database server is created. If you do not
 #                   need an external database server remove the 'postgres_servers'
